@@ -1,0 +1,1035 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* 
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none; 
+}
+
+body{
+    font-family: 'Poppins', sans-serif;   
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header{
+    align-items: center;
+    background-color: #ffffff;
+    padding: 60px 0 0 0;
+   
+}
+
+
+.menu {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #038c7f;
+    
+}
+
+
+.logo {
+    height: 55px;
+    width: 55px;
+}
+
+.logo:hover {
+   scale: 1.1;
+   transition: all 0.5s;
+}
+
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    
+}
+
+.menu .navbar ul li a{
+    font-size: 15px;
+    padding: 20px;
+    color: #f2f2f2;
+    display: block;
+
+}
+
+.menu .navbar ul li a::after{
+   
+   content:"";
+   height: 1px;
+   width: 0;
+   background-color: #F2F2F2;
+   display: block;
+   transition: all 0.3s;
+
+
+}
+
+.menu .navbar ul li a:hover::after{
+   width: 100%;
+ 
+ 
+ }
+
+#inicio{
+    display: none;
+}
+
+.icons {
+    padding-right: 20px;
+    color: #F2F2F2;
+    
+   
+}
+
+
+.icons ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.icons ul li svg{
+   
+    color: #F2F2F2;
+}
+
+.icons ul li svg:hover{
+    color: #FDB9B6;
+    transition: 0.25s;
+}
+
+#menu {
+    display: none;
+}
+.menu-icono {
+     width: 50px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+.header-img {
+    text-align: center;
+ background-image: url(/fondo-pagina/aads.jpeg);
+ height: 750px;
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.frase1{
+    font-size: 50px;
+    font-family: "Oswald";
+    color:#025951;
+    text-transform: uppercase;
+}
+
+.frase2{
+    font-size: 25px;
+    font-family: "Oswald";
+    color:#025951;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+.header h1{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #025951;
+    font-family: "Oswald", sans-serif;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-decoration: underline 2px;
+    font-weight: 500;
+}
+
+.ofert {
+    padding: 0 20px 80px 20px;
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.ofert-1 {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.3% - 30px);
+    padding: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+   
+}
+
+.ofert-1 img{
+    background-color: #f2f2f2;
+    
+}
+
+.ofert-1:hover{
+    transition: 0.5s all ease-in-out;
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.products {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+
+}
+
+.product{
+    text-align: center;
+    padding: 30px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.product:hover{
+    transition: all 0.5s ;
+    transform: scale(0.95);
+}
+
+
+.product img{
+    height: 325px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+
+
+
+.product h3{
+    font-size: 20px;
+    color: #111111;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.product p{
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+#buzos:checked ~ #imagenes #pantalon,
+ #buzos:checked ~ #imagenes #remera,
+ #buzos:checked ~ #imagenes #campera,
+ #buzos:checked ~ #imagenes #vestido{
+    display: none;
+}
+
+
+#camperas:checked ~ #imagenes #pantalon,
+#camperas:checked ~ #imagenes #remera,
+#camperas:checked ~ #imagenes #buzo,
+#camperas:checked ~ #imagenes #vestido{
+    display: none;
+}
+
+#remeras:checked ~ #imagenes #pantalon,
+#remeras:checked ~ #imagenes #campera,
+#remeras:checked ~ #imagenes #buzo, 
+#remeras:checked ~ #imagenes #vestido{
+    display: none;
+}
+
+#pantalones:checked ~ #imagenes #remera,
+#pantalones:checked ~ #imagenes #campera, 
+#pantalones:checked ~ #imagenes #buzo, 
+#pantalones:checked ~ #imagenes #vestido{
+    display: none;
+}
+
+#vestido:checked ~ #imagenes #remera, 
+#vestido:checked ~ #imagenes #campera, 
+#vestido:checked ~ #imagenes #buzo, 
+#vestido:checked ~ #imagenes #pantalon{
+    display: none;
+}
+
+
+#filter label{
+    font-family: "Oswald";
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #038c7f;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+#filter label:hover{
+    background-color: #FDB9B6;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+
+#filter input[type="radio"]{
+    display: none;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 5px 20px;
+    background-color: #FDB9B6;
+    
+    
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logofooter {
+    height: 125px;
+    width: 125px;
+    display: none;
+ 
+}
+
+
+.footer h3{
+    font-size: 17px;
+    color: #038c7f;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+
+.ayuda li{
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+.ayuda a{
+    color: #038c7f;
+    font-size: 15px;
+}
+.ayuda a:hover{
+    color: #F2F2F2;
+   transition: 0.25s;
+}
+
+.seguinos svg{
+    color: #038c7f;
+    margin-left: 21px;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 10px;
+}
+
+.seguinos svg:hover{
+    color: #F2F2F2;
+    scale: 1.2;
+    transition: all 0.25s;
+}
+
+.seguinos ul{
+display: flex;
+}
+
+.contactanos ul{
+    display: flex;
+}
+
+.contactanos svg{
+    color: #038c7f;
+    margin-left: 13px;
+    height: 20px;
+    width: 20px;
+}
+.contactanos svg:hover{
+    color: #F2F2F2;
+    scale: 1.2;
+    transition: all 0.25s;
+}
+
+
+
+
+
+.product-1 {
+ margin-top: 100px;
+ display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+    
+}
+.container-img {
+    margin-left: 20px;
+    display: flex 1;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+}
+
+.container-info-product{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-name{
+color: #025951;
+font-weight: 700;
+}
+
+.container-price{
+    color: #025951;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #025951;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-details-product{
+    padding: 30px 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    width: 100px;
+    color: #025951;
+    font-weight: 700;
+}
+
+
+
+.form-group select{
+width: 300px;
+border: none;
+padding: 12px 15px;
+background-color: #F2F2F2;
+outline: none;
+color: black;
+cursor: pointer;
+
+}
+
+.form-group select:hover{
+   scale: 1.01;
+   transition: all 0.15s;
+    
+    }
+
+
+
+.container-add-cart{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #025951;
+    user-select: none;
+}
+
+.btn-add-to-cart{
+    border: none;
+    background-color: #025951;
+    padding: 10px;
+    color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-add-to-cart:hover{
+   background-color: #FDB9B6;
+   transition: all 0.5s;
+}
+
+.container-quantity{
+    position: relative;
+}
+
+.input-quantity {
+    
+    border: none;
+    padding: 10px;
+    width: 60px;
+    height: 100%;
+    color: #111111;
+    font-weight: 500;
+}
+
+.input-quantity::-webkit-inner-spin-button,
+.input-quantity::-webkit-outer-spin-button{
+-webkit-appearance: none;
+appearance: none;
+}
+
+.btn-increment-decrement{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.bi-chevron-up{
+width: 14px;
+height: 14px;
+}
+
+.bi-chevron-down{
+    width: 14px;
+    height: 14px;
+    }
+
+.bi-chevron-up:hover{
+    width: 14px;
+     height: 14px;
+    color: #038c7f;
+    transition: 0.25s;
+}
+
+.bi-chevron-down:hover{
+     width: 14px;
+     height: 14px;
+     color: #038c7f;
+     transition: 0.25s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.informacion{
+    background-color: #F2F2F2;
+     padding: 75px 25px ;
+}
+
+.sobre_nosotros_i {
+    margin-bottom: 100px;
+}
+
+.sobre_nosotros_i h1{
+    font-family: "Oswald";
+    color:#025951;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline 2px;
+   }
+
+.sobre_nosotros_i p{
+    color:#038c7f;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+   }
+
+
+
+.ayuda_i{
+ margin-bottom: 75px;
+}
+
+.ayuda_i h1{
+    font-family: "Oswald";
+    color:#025951;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline 2px;
+}
+
+.ayuda_i h2{
+    font-family: "Oswald";
+    color:#ff94ce;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.ayuda_i h3{
+    font-family: "Oswald";
+    color:#FDB9B6;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.ayuda_i p{
+    color:#038c7f;
+    margin-bottom: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carrito-background{
+    margin-bottom: 500px;
+}
+
+.div-carrito{
+    padding: 20px 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'oswald';
+    text-transform: uppercase;
+    color: #F2F2F2;
+    border: solid 1px #111111;
+    border-radius: 10px;
+    background-color: #FDB9B6;
+    
+}
+
+.delete-btn{
+        border: none;
+        background-color:  #038c7f;
+        color: #F2F2F2;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 5px 8px;
+        border-radius: 5px;
+       float: right;
+       
+    
+}
+
+.add-btn {
+    border: none;
+    background-color:  #038c7f;
+    color: #F2F2F2;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-left: 30px;
+   
+}
+
+.remove-btn{
+    border: none;
+    background-color: #038c7f;
+    color: #F2F2F2;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 9px;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+}
+
+#total-price{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: 'oswald';
+
+}
+
+#whatsapp-button{
+    border: none;
+    border-radius: 16px;
+    margin-left: 46.25%;
+    margin-right: 50%;
+    background-color: #038c7f;
+    padding: 8px;
+    font-family: 'oswald';
+    font-size: 15px;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+#whatsapp-button:hover {
+ 
+    transition: 0.25s;
+    background-color: #FDB9B6;
+    
+    
+}
+
+
+
+
+
+.add-btn:hover {
+    background-color: #F2F2F2;
+    color: #FDB9B6;
+    transition: 0.25s;
+   
+}
+
+.remove-btn:hover {
+    background-color: #F2F2F2;
+    color: #FDB9B6;
+    transition: 0.25s;
+   
+}
+
+.delete-btn:hover {
+    background-color: #F2F2F2;
+    color: #FDB9B6;
+    transition: 0.25s;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    .menu{
+        padding: 18px;
+       
+    }
+    #menu{
+        display: none;
+    }
+    .menu label{
+       display:flex;
+      
+        
+    }
+    
+    #menuicono{
+        color: #f2f2f2;
+        width: 25px;
+        height: 25px;
+        
+        
+    }
+
+    #menuicono:hover{
+        color:#FDB9B6;
+    }
+
+    
+
+    .icono-bag svg{
+        width: 20px;
+        height: 20px;
+        
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#FDB9B6;
+        display: none;
+        
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+     .menu .navbar ul li a {
+        color: #F2F2F2;
+        text-align: center;
+        text-decoration: underline 1px;
+     }
+
+     .menu .navbar ul li a:hover {
+        color:#FDB9B6;
+        text-align: center;
+        text-decoration: underline 1px;
+        background-color:#038c7f;
+        transition: all 0.5s;
+     }
+
+     .menu .navbar ul li a::after{
+        display: none;
+     }
+     
+     .menu .navbar ul li a:hover::after{
+        display: none;
+      }
+
+     #inicio{
+        display: block;
+     }
+
+     #menu:checked ~ .navbar {
+        display: initial;
+        
+     }
+    
+     .logo {
+       display: none;
+     }
+
+     .header {
+        min-height: 0vh;
+     
+    }
+     
+    .header-img {
+      background-image: url(/fondo-pagina/aads.jpeg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     
+    }
+
+
+
+
+    .header-content {
+        padding: 50px 0;
+        flex-direction: column;
+        
+    }
+
+    .ofert {
+        padding: 30px 30px 0 30px;
+        flex-direction: column;
+    }
+
+    .ofert-1 {
+        margin-bottom: 30px;
+    }
+
+    .products {
+        padding: 0 35px 30px 35px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+   
+    .product img {
+        width: 200px;
+        height: 200px;
+    }
+    
+
+
+
+
+
+
+
+
+    .product-1{
+        flex-direction: column;
+        padding: 0px 30px ;
+    }
+
+
+
+
+    #filter label{
+        font-family: "Oswald";
+        font-weight: 600;
+        cursor: pointer;
+        background-color: #038c7f;
+        color: #F2F2F2;
+        text-transform: uppercase;
+        padding: 4px 6px;
+        border-radius: 4px;
+        font-size: 14px;
+     
+    }
+    #filter label:hover{
+        background-color: #FDB9B6;
+        padding: 5px 7px;
+    }
+
+
+   
+
+
+
+
+
+
+    .div-carrito{
+        padding: 20px 10px;
+   
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'oswald';
+        text-transform: uppercase;
+        color: #F2F2F2;
+        border: solid 1px #111111;
+        border-radius: 10px;
+        background-color: #FDB9B6;
+        
+    }
+}

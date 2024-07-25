@@ -1,0 +1,142 @@
+[
+    {
+        "id":1,
+        "category":"buzo",
+        "image":"/Imagenes de productos/Buzo-Corto-Mujer-Militar.png",
+        "name":"Buzo corto Mujer",
+        "price":15000
+    },
+    {
+        "id":2,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Calza-Capri-Mujer.png",
+        "name":"Calza Capri Mujer",
+        "price":15000
+    },
+    {
+        "id":3,
+        "category":"buzo",
+        "image":"/Imagenes de productos/Buzo-Mujer-Canguro-con-Estampa.png",
+        "name":"Buzo Mujer Canguro con Estampa",
+        "price":15000
+    },
+    {
+        "id":4,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Calza-Recta-Mujer.png",
+        "name":"Calza Recta Mujer",
+        "price":15000
+    },
+    {
+        "id":5,
+        "category":"remera",
+        "image":"/Imagenes de productos//Camiseta-Bretel Mujer-Puntilla.png",
+        "name":"Camiseta Bretel Mujer Puntilla",
+        "price":15000
+    },
+    {
+        "id":6,
+        "category":"buzo",
+        "image":"/Imagenes de productos/Buzo-Mujer-Rustico.png",
+        "name":"Buzo Mujer Rustico",
+        "price":15000
+    },
+    {
+        "id":7,
+        "category":"campera",
+        "image":"/Imagenes de productos/Campera-Dama-Softshell.png",
+        "name":"Campera Dama Softshell",
+        "price":15000
+    },
+    {
+        "id":8,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Pantalon-Mujer-Oxford.png",
+        "name":"Pantalon Mujer Oxford",
+        "price":15000
+    },
+    {
+        "id":9,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Pantalón-Mujer-Engomado.png",
+        "name":"Pantalón Mujer Engomado",
+        "price":15000
+    },
+    {
+        "id":10,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Pantalón-Mujer-Jean.png",
+        "name":"Pantalón Mujer Jean",
+        "price":15000
+    },
+    {
+        "id":11,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Pantalón-Mujer-Jogger.png",
+        "name":"Pantalón Mujer Jogger",
+        "price":15000
+    },
+    {
+        "id":12,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Pantalón-Mujer-Legging-Estampa.png",
+        "name":"Pantalón Mujer Legging Estampa",
+        "price":15000
+    },
+    {
+        "id":13,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Pantalón-Mujer-Palazzo.png",
+        "name":"Pantalón Mujer Palazzo",
+        "price":15000
+    },
+    {
+        "id":14,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Pollera-Mujer-Estampada.png",
+        "name":"Pollera Mujer Estampada",
+        "price":15000
+    },
+    {
+        "id":15,
+        "category":"remera",
+        "image":"/Imagenes de productos/Remera-Manga-Larga-Rayada.png",
+        "name":"Remera Manga Larga Rayada",
+        "price":15000
+    },
+    {
+        "id":16,
+        "category":"remera",
+        "image":"/Imagenes de productos/Remera-Mujer Manga-Corta-Con-Volado.png",
+        "name":"Remera Manga Corta Con Volado",
+        "price":15000
+    },
+    {
+        "id":17,
+        "category":"remera",
+        "image":"/Imagenes de productos/Remera-Mujer-Manga-Corta.png",
+        "name":"Remera Mujer Manga Corta",
+        "price":15000
+    },
+    {
+        "id":18,
+        "category":"pantalon",
+        "image":"/Imagenes de productos/Short-Mujer-Fibrana.png",
+        "name":"Short Mujer Fibrana",
+        "price":15000
+    },
+    {
+        "id":19,
+        "category":"vestido",
+        "image":"/Imagenes de productos/Vestido-Mujer-Con-Volados.png",
+        "name":"Vestido Mujer Con Volados",
+        "price":15000
+    },
+    {
+        "id":20,
+        "category":"vestido",
+        "image":"/Imagenes de productos/Vestido-Mujer-Manga-Larga-Buzo.png",
+        "name":"Vestido Mujer Manga Larga Buzo",
+        "price":15000
+    }
+]
